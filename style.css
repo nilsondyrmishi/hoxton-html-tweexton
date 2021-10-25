@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: #1c4d87;
+    display: grid;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    place-content: center;
+}
+h2{
+    color: #1e4e88;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));;
+    padding: 50px;
+    justify-items: center;
+
+}
+img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+main section.popular-tweet p{
+    padding: 5px;
+    font-style: italic;
+
+}
+
+main section.popular-tweet{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    border: 1px solid #a1c8fb;
+    padding: 10px;
+    margin: 10px 30px 10px 0;
+
+
+}
+
+
+.meta{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    gap: 5px;
+}
+.author-name{
+
+
+    color: #050505;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.author-handle{
+    color: #f8f7f7;
+
+}
+
+.time{
+    display: grid;
+    justify-content: end;
+    margin-top: 10px;
+    color: #050505;
+}
+
+#trending-tweet .author-name{
+    color: white;
+}
+
+#trending-tweet .author-handle{
+    color: rgba(255, 255, 255, 0.363);
+}
+
+
+#popular .popular-tweet:nth-of-type(1){
+    background-color: rgba(150, 5, 5, 0.41);
+}
+
+#popular .popular-tweet:nth-of-type(2){
+    background-color: rgba(50, 96, 246, 0.41);
+}
+#popular .popular-tweet:nth-of-type(2) .time{
+    color: rgba(10, 10, 10, 0.58);
+}
+
+#popular .popular-tweet:nth-of-type(3){
+    background-color: rgba(0, 102, 255, 0.411);
+}
+#popular .popular-tweet:nth-of-type(3) .time{
+    color: rgba(255, 255, 255, 0.582);
+}
+
+#trending .popular-tweet:nth-of-type(1){
+    background-color: rgba(9, 9, 9, 0.42);
+}
+
+#trending .popular-tweet:nth-of-type(1) .author-name {
+    color: rgba(8, 8, 3, 0.719);
+}
+
+#trending .popular-tweet:nth-of-type(1) .author-handle {
+    color: rgba(8, 8, 3, 0.418);
+}
+
+#trending .popular-tweet:nth-of-type(2){
+    background-color: rgba(38, 38, 38, 0.42);
+}
+
+#trending .popular-tweet:nth-of-type(2) .author-name {
+    color: rgba(8, 8, 3, 0.719);
+}
+
+#trending .popular-tweet:nth-of-type(2) .author-handle {
+    color: rgba(8, 8, 3, 0.418);
+}
+
+#upcoming .popular-tweet:nth-of-type(1){
+    background-color: rgba(8, 63, 62, 0.41);
+}
+
+#upcoming .popular-tweet:nth-of-type(2){
+    background-color: rgba(190, 109, 42, 0.411);
+}
+
+
+/*#upcoming #trending-tweet {*/
+
+/*}*/
+
+@media screen and (max-width: 1000px) {
+
+}
